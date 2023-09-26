@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #2A272A;
+}
+
+h1 {
+  color: #00C9C8;
+  text-transform: uppercase;
+  text-align: center;
+  margin-block: 5rem;
+  font-size: 6rem;
+  letter-spacing: 4px;
+  text-shadow: 0px 0px 25px rgba(0, 201, 200, 1);
+}
+
+#choose_player {
+  height: 5rem;
+  justify-content: space-around;
+}
+
+#choose_player button {
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  border: 2px solid #00c9c9e0;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.choose_opponents {
+  background-color: transparent;
+  color: #00C9C8;
+}
+
+.choose_opponents:hover {
+  background-color: #08afaf;
+  color: white;
+}
+
+.choose_opponent {
+  background-color: #08afaf;
+  color: white;
+}
+
+.choose_opponent:hover {
+  background-color: #08afaf;
+  color: white;
+}
+
+#player_names {
+  margin-block: 2rem;
+  width: 100%;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#player_names div {
+  height: 5rem;
+  border: 2px solid #00c9c9e0;
+  border-radius: 2rem;
+  width: 100%;
+  margin-block: 5px;
+  background-color: #bffcf929;
+  padding-inline: 2rem;
+}
+
+#player_names label {
+  width: 5rem;
+  height: 100%;
+  justify-content: center;
+}
+
+#player_names input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-left: 2rem;
+  cursor: pointer;
+  color: #02e4e4;
+  font-size: 1.8rem;
+}
+
+#btn {
+  width: 30rem;
+  justify-content: space-around;
+}
+
+#player_names input::placeholder {
+  color: #452b2b;
+}
+
+#player_names input:disabled {
+  color: #02e4e494;
+}
+
+#player_names input:disabled::placeholder {
+  color: #382626c8;
+}
+
+#btn button {
+  width: 8rem;
+  height: 8rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid #00c9c968;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn button:active {
+  background: rgba(255, 255, 255, 0.458);
+}
+
+#section2 {
+  display: none;
+}
+
+#section2 h4 {
+  height: 5rem;
+  margin: 1rem;
+  justify-content: center;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #A3CFCD;
+}
+
+#game_area {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.box {
+  width: 8rem;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25%;
+  -webkit-box-shadow: 0px 0px 18px -6px rgba(0, 201, 201, 1);
+  -moz-box-shadow: 0px 0px 18px -6px rgba(0, 201, 201, 1);
+  box-shadow: 0px 0px 18px -6px rgba(0, 201, 201, 1);
+  background-color: #45434C;
+}
+
+.winnerplayer {
+  -webkit-box-shadow: inset 0px 0px 30px -3px rgba(0, 201, 201, 1);
+  -moz-box-shadow: inset 0px 0px 30px -3px rgba(0, 201, 201, 1);
+  box-shadow: inset 0px 0px 30px -3px rgba(0, 201, 201, 1);
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
